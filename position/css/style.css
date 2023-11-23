@@ -1,0 +1,72 @@
+/* 
+# Exercice dirigé: La propriété position
+
+## La propriété position et ses différentes valeurs: static, relative, absolute, fixed et sticky
+- Ajouter les classes .container et .parent au main
+- Ajouter 11 articles dans le main
+- Tester les différentes valeurs de la propriétét propriété position sur les articles en ajouter une classe dédiée à chaque valeur (laisser un article intermédiare à chaque fois)
+
+## Couleurs
+- static: #9c6
+- relative: #fc3
+- absolute: #f93
+- fixed: #69c
+- sticky: #f9c
+*/
+
+.block{
+    border: 1px dashed red;
+    padding: 2em 1em;
+}
+
+article{
+    margin-bottom: 2em;
+}
+
+
+
+article:nth-of-type(2){
+    position: sticky;
+    top: 0;
+    background-color: #f9c;
+}
+
+
+
+article:nth-of-type(4){
+    position: static;
+    background-color:  #9c6;
+}
+
+
+
+article:nth-of-type(6){
+    position: relative;
+    right: 5em;
+    background-color:  #fc3;
+}
+
+
+
+article:nth-of-type(8){
+    position: relative;
+}
+
+article:nth-of-type(8) p:first-of-type{
+    position: absolute;
+    background-color: #f93;
+    right: 0;
+    top:-1em;
+    padding: 1em;
+}
+
+
+
+article:nth-of-type(10){
+    position: fixed;
+    background-color:  #69c;
+    top: 5em;
+    right: 0;
+    width: 40%;
+}
+

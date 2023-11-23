@@ -1,0 +1,62 @@
+/* 
+# Exercice dirigé: Animation CSS
+
+## Loader 1
+Reproduire l'animation de loader conformément au fichier "loader-1.mp4" en CSS, à l'aide des propriétés d'animation et de transformation.
+
+## Loader 2
+Reproduire l'animation de loader conformément au fichier "loader-2.mp4" en CSS, à l'aide des propriétés d'animation et de transformation.
+
+Les animations doivent se jouer en boucle.
+*/
+@keyframes loader-anim {
+	0% {
+		transform: scaleY(1.5);
+	}
+	100% {
+		transform: scaleY(1);
+	}
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.carre-rouge{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+
+.image{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding: 1.5em 1em;
+}
+.un, .deux, .trois{
+    
+    min-width:15px;
+    min-height: 50px;
+    background-color: #fff;
+    animation: loader-anim 1.5s infinite;
+}
+
+
+.un {
+	animation-delay: -0.4s;
+}
+
+.deux {
+	left: 42px;
+	animation-delay: -0.2s;
+}
+
+.trois {
+	left: 67px;
+	animation-delay: 0;
+}
+
+

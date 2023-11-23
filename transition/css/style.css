@@ -1,0 +1,45 @@
+/* 
+# Exercice dirigé: Transition CSS
+
+## Menu
+Créer un menu conformément à la maquette fournie.
+- couleur de fond du menu #DD5735
+- couleur du texte des rubriques #fff
+
+## Au survol des rubriques
+- la couleur du texte passe progressivement à #333 (en 0.2s)
+- la couleur de fond passe progressivement à #fc3 (en 1s)
+- la rubrique est agrandie 1.5 fois (en 0.5s)
+
+Un exemple est montré à la rubrique 4
+*/
+
+
+.rubrique ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #fff;
+    background-color: #DD5735;
+}
+
+.rubrique li{
+    list-style: none;
+}
+
+ul > a{
+    padding: 1em;
+    font-size: 1.2em;
+    color: #fff;
+    transition: color 2s, background-color 1s, transform 0.5s ;
+}
+
+a:hover{
+    text-decoration: none;
+    background-color: #fc3;
+    color: #333;
+    transform: scale(1.5);
+}
+
+
+

@@ -1,0 +1,148 @@
+article p{
+    padding: 3em;
+}
+
+/****************************** Dégradé linéaire avec le minimum de paramètres **********************************/
+
+section:first-of-type > article:first-of-type p{
+    background-image: linear-gradient(orange, orange);
+}
+
+/****************************** Dégradé linéaire avec plusieurs couleurs **********************************/
+
+section:first-of-type > article:nth-of-type(2) p{
+    background-image: linear-gradient(blue, pink, yellow);
+}
+
+/****************************** Dégradé linéaire avec un angle **********************************/
+
+section:first-of-type > article:nth-of-type(3) p{
+    background-image: linear-gradient(70deg, orange, pink);
+}
+
+/****************************** Dégradé linéaire avec des point d'arret en pourcentage **********************************/
+
+section:first-of-type > article:nth-of-type(4) p{
+    background-image: linear-gradient(90deg,#9c3 40%, #fc3 40%, #f63 60%);
+}
+
+/****************************** Dégradé linéaire répété plusieurs fois **********************************/
+
+ection:first-of-type > article:nth-of-type(5) p{
+    background-image: repeating-linear-gradient(90deg,#9c3, #fc3, #f63);
+	background-size: 25%;
+}
+
+/****************************** Dégradé radial **********************************/
+
+section:first-of-type > article:nth-of-type(6) p{
+    background-image: radial-gradient(#fc3, #f63);
+}
+
+/****************************** Dégradé radial en cercle **********************************/
+
+section:first-of-type > article:nth-of-type(7) p{
+    background-image: radial-gradient(circle, #fc3, #f63);
+}
+
+/****************************** Dégradé radial en cercle inscrit **********************************/
+
+section:first-of-type > article:nth-of-type(8) p{
+   background-image: radial-gradient(circle closest-side, #fc3, #f63);
+}
+
+/****************************** Dégradé radial en cercle inscrit placé à 25% **********************************/
+
+section:first-of-type > article:nth-of-type(9) p{
+    background-image: radial-gradient(circle closest-side at 25%, #fc3, #f63);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************* Ombre petite *******************************/
+
+section:nth-of-type(2) > article:nth-of-type(1) p{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+/******************************* Ombre grande *******************************/
+
+section:nth-of-type(2) > article:nth-of-type(2) p{
+    box-shadow: 0 20px 20px rgba(0,0,0,0.5);
+}
+
+/******************************* Ombre interne *******************************/
+
+section:nth-of-type(2) > article:nth-of-type(3) p{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.5) inset;
+}
+
+/******************************* Ombre colorée *******************************/
+
+section:nth-of-type(2) > article:nth-of-type(4) p{
+    box-shadow: 5px 10px 10px #f63;
+}
+
+/******************************* Ombre étalée *******************************/
+
+section:nth-of-type(2) > article:nth-of-type(5) p{
+   box-shadow: 0 0 5px 10px #f63;
+}
+
+/******************************* Ombre multiple *******************************/
+
+section:nth-of-type(2) > article:nth-of-type(6) p{
+   box-shadow: 0 5px 5px #9c3, 0 15px 15px #fc3, 0 25px 25px #f63;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************* Ombre petite *******************************/
+
+section:nth-of-type(3) > article:nth-of-type(1) p{
+   text-shadow: 0 1px 2px rgba(0,0,0,0.7);
+}
+
+/******************************* Ombre grande *******************************/
+
+section:nth-of-type(3) > article:nth-of-type(2) p{
+   text-shadow: 4px 8px 4px rgba(0,0,0,0.7);
+}
+
+/******************************* Ombre colorée *******************************/
+
+section:nth-of-type(3) > article:nth-of-type(3) p{
+   text-shadow: 4px 8px 4px #f63;
+}
+
+/******************************* Ombre multiple *******************************/
+
+section:nth-of-type(3) > article:nth-of-type(4) p{
+   text-shadow: 1px 1px 1px #9c3, 2px 2px 2px #fc3, 3px 3px 3px #f63;
+}
